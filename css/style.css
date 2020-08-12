@@ -1,0 +1,62 @@
+/*
+Theme Name: Tai Crane Karate 
+Author: Zeny
+Version: 1.0
+*/
+
+/* @imports */
+@import "normalize.css";
+@import "base/_global";
+@import "base/_mixins";
+@import "modules/_header";
+@import "modules/_hero";
+@import "modules/_two-column";
+@import "modules/_address";
+@import "modules/_image-post";
+@import "modules/_btn";
+@import "modules/_blog-section";
+@import "modules/_footer";
+@import "modules/_contact";
+@import "modules/_single-page";
+
+
+/* Variables */
+$mainAccent: green;
+
+#map {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#000000;
+    border-top:#000000 1px solid;
+    border-bottom:#000000 1px solid;
+    padding:0;
+    margin:0;
+}
+
+
+/*****  blog page ****/
+
+#blog-page {
+    width:100%;
+    margin:0;
+    padding:70px 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background:#dddddd;
+    
+    @mixin atMobile d{
+    flex-direction: column !important;
+    align-items: center;
+    padding:30px;   
+    }
+}
+
+
+  
+
+
+
+    

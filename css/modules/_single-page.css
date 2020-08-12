@@ -1,0 +1,44 @@
+/* class for single pages */
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding: 70px;
+	background: #dddddd;
+	color: #000;
+	
+	@mixin atMobile {
+	padding: 50px 20px;
+    }
+}
+
+.wrapper {
+	width:800px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	
+	@mixin atMobile {
+	width: 100%;
+    flex-direction: column !important;
+    align-items: center;
+    padding:10px;
+    }
+
+}
+
+.wrapper * {
+	margin: 10px auto;
+}
+
+.wrapper p {
+	max-width: 600px;
+}
+
+.wrapper img {
+		max-width: 600px;
+		height: auto;
+	}

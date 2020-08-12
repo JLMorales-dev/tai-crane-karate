@@ -1,0 +1,126 @@
+#header {
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100 !important;
+    
+    @mixin atMobile {
+    flex-direction: column;
+    }
+ }
+        
+#brand-Logo {
+    width: 100%;
+    display: block;
+    margin:0 auto;
+    background: #dddddd;
+    padding: 8px 0 10px 0;
+}
+
+#brand-Logo img {
+   max-width: 100%;
+   max-height: 100px;
+   display: block;
+   margin:0 auto;
+   text-align: center;
+    
+   @mixin atMobile {
+   max-height: 70px;
+   width: auto;
+   }
+}
+
+#top-nav{
+   width: 100%;
+   box-sizing: border-box;
+   color: #fff;
+   line-height: 40px;
+   text-align: center;
+   text-transform: uppercase;
+   background:#b31e24;
+  -webkit-box-shadow: 0px 4px 14px -5px rgba(0,0,0,0.5); 
+   box-shadow: 0px 4px 14px -5px rgba(0,0,0,0.5);
+    
+    @mixin atMobile {
+    clear: both;
+    }
+}
+      
+#menu-main-header-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+    box-sizing: border-box;
+    z-index:100 !important;
+    
+    @mixin atMobile {
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+	transition-property: all;
+	transition-duration: .6s;
+	transition-timing-function: ease-in-out; 
+
+    }
+}
+
+#menu-main-header-menu li {
+    list-style-type: none;
+    display:inline-block;
+	
+	@mixin atMobile {
+		display: block;
+	}
+}
+        
+ #menu-main-header-menu a {
+     clear: right;
+     text-decoration: none;
+     color: #fff;
+     margin: 0 10px;
+     line-height: 70px;
+     
+     @mixin atMobile {
+     display: block !important;
+     border-bottom: 1px solid rgba(0,0,0,.2);
+     margin:0;
+     background:#b31e24;   
+     }
+}
+        
+#menu-main-header-menu a:hover {
+      text-decoration: underline;
+}
+        
+label {
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 40px;
+    display: none;
+    width:25px;
+    
+    @mixin atMobile {
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;   
+    }
+}
+
+#toggle {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+#toggle:checked + .menu-main-header-menu-container #menu-main-header-menu {
+
+   max-height: 2000px;
+   }
+}
+    
+   

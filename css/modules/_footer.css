@@ -1,0 +1,76 @@
+footer {
+    margin:0;
+    padding:50px;
+    display: flex;
+    background:#000;
+    color:#fff;
+    border-top:5px solid #000000;
+    border-bottom:5px solid #000000;
+    
+    @mixin atMobile {
+    padding:15px;
+    flex-direction: column;
+    align-items: center
+    }
+}
+
+footer > div {
+    width: 33.33%;
+    padding: 10px 10px 10px 40px;
+    border-left: thin dotted #dddddd;
+    
+    @mixin atMobile {
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    margin-bottom: 30px;
+    border-bottom: thin dotted #dddddd;
+    border-left: none;
+    text-align: center;
+    }
+}
+
+footer > div:first-child {
+	border-left: none;
+}
+
+footer #brand-Logo {
+    background-color:#000;
+    font-size: 1.5rem;
+	font-family: 'Merriweather', serif;
+    margin: 0;
+    height: 50px;
+    
+    @mixin atMobile {
+    margin-bottom: 15px;
+    }
+}
+
+.footer-info {
+    margin: 0;
+	color:#fff;
+}
+
+.footer-menu {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none!important;
+    text-transform: uppercase;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none
+}
+
+#parks-recs {
+    margin: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+

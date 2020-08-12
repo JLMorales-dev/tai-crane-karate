@@ -1,0 +1,64 @@
+/***** CSS for Our Style and About Section ******/
+
+.two-column {
+    width:100%;
+    padding:70px 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    
+    @mixin atMobile {
+    padding:40px 15px;
+    flex-direction: column;
+    align-items: center;
+	text-align: left;
+    }
+}
+
+.two-column > div {
+    width: 50%; 
+    padding-top:25px;
+	padding-bottom:25px;
+	display: flex;
+	
+    
+    @mixin atMobile {
+    width: 100%; 
+    padding:0px;
+    }
+}
+
+.two-column > div:nth-child(1) {
+	float: right;
+	justify-content: flex-end;
+	padding-right: 50px;
+	
+	 @mixin atMobile {
+	padding-right: 0;
+	}
+}
+
+.two-column > div:nth-child(2) {
+	float: left;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-left: 50px;
+	
+	@mixin atMobile {
+	padding-left: 0;
+	}
+}
+
+
+.two-column > div img {
+    max-width: 100%;
+	width: 500px;
+    float: right;
+}
+
+.two-column div p {
+    text-align: left;
+    max-width: 700px;
+}
+

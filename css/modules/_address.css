@@ -1,0 +1,42 @@
+/***** ADDRESS ******/
+
+#address {
+    width:100%;
+    padding:70px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+	background: #b31e24;
+    
+    @mixin atMobile {
+    flex-direction: column !important;
+    padding:15px;   
+    }
+}
+
+#address div {
+    border:1px dotted #7d7d7d;
+    padding:30px 50px;
+    background: #ffffff;
+    line-height: .75em;
+    flex:1;
+    
+    @mixin atMobile {
+    width:100%;
+    padding: 15px;   
+    }
+}
+
+#address div a {
+    color:#000000;
+	text-decoration: none;
+}
+
+#address div dl {
+	line-height: 1.5em;
+} 
+
+#address div dt {
+	font-weight: 600;
+}
+

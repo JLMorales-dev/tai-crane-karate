@@ -1,0 +1,39 @@
+/************************
+****  HERO  ******
+************************/  
+#hero-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#hero {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background:rgba(0,0,0,.4)!important;
+    color: #fff;
+}
+#center-info {
+    display: inline-block;
+    margin: auto !important;
+    padding: 25px;
+}
+        
+#center-info h1 {
+	font-size: 2.5em;
+}
+        
+#center-info h4 {
+    margin: 20px auto;
+}
